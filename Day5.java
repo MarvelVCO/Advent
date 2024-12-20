@@ -57,7 +57,7 @@ public class Day5 {
     }
 
 
-    public static void main(String[] args) {
+    public static int starTwo() {
         ArrayList<String> fileData = getFileData("src/input.txt");
         String file = "";
         for (String line : fileData) {
@@ -109,7 +109,7 @@ public class Day5 {
                 result += update[update.length / 2];
             }
         }
-        System.out.println(result);
+        return result;
     }
 
     public static ArrayList<String> getFileData(String fileName) {
